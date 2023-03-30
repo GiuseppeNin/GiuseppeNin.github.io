@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rebeccapurple;
+    background-color: $primary-color;
+    align-items: center;
+   
+
+    .options { 
+        list-style: none;
+        display: flex;
+        
+       a { 
+        text-decoration: none;
+
+        &:hover {
+            color: aquamarine;
+        }
+
+        }
+
+       li {
+        margin: 0 10px 0 10px;
+
+       } 
+
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+}
+
