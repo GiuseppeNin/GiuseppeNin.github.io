@@ -1,36 +1,17 @@
 $primary-color: rgb(38, 148, 221);
-$font: Roboto, sans-serif;
+$secondary-color:rgb(157, 187, 207)  ;
+$font:Raleway;
 
-@font-face {
-    font-family:"Roboto";
-    src: url("assets/fonts/Roboto-Light-webfont.woff") format("woff");
-    font-style: normal;
-    font-weight:300;
-  }
-  
-  @font-face {
-    font-family: "Roboto";
-    src: url("assets/fonts/Roboto-LightItalic-webfont.woff") format("woff");
-    font-style: italic;
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family:"Roboto";
-    src: url("assets/fonts/Roboto-Bold-webfont.woff") format("woff");
-    font-style:normal;
-    font-weight:700;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+ 
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-  font-family: $font ;
-  
+    font-family: $font;
 }
 
 @import "navbar";
+@import "body";

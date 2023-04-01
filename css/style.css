@@ -1,44 +1,32 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("assets/fonts/Roboto-Light-webfont.woff") format("woff");
-  font-style: normal;
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("assets/fonts/Roboto-LightItalic-webfont.woff") format("woff");
-  font-style: italic;
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("assets/fonts/Roboto-Bold-webfont.woff") format("woff");
-  font-style: normal;
-  font-weight: 700;
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
+  font-family: Raleway;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  border: 1px solid rebeccapurple;
-  background-color: rgb(38, 148, 221);
+  position: fixed;
+  background-image: linear-gradient(to left, rgb(38, 148, 221), rgb(157, 187, 207));
   align-items: center;
+  height: 7%;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
 }
 .navbar .options {
   list-style: none;
   display: flex;
+  margin-right: 10px;
 }
 .navbar .options a {
   text-decoration: none;
+}
+.navbar .options a:visited {
+  color: black;
 }
 .navbar .options a:hover {
   color: aquamarine;
@@ -49,4 +37,49 @@ body {
 .navbar .name {
   font-weight: bold;
   font-size: 20px;
+  margin-left: 10px;
+}
+
+@media (max-width: 400px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .options > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .options > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+main {
+  margin-top: 80px;
 }/*# sourceMappingURL=style.css.map */
