@@ -7,7 +7,7 @@
     height: 7%;
     width: 100%;
     top:0;
-    box-shadow:   0 3px 2px rgba(0, 0, 0, .2);
+    box-shadow:   0 3px 2px rgba(0, 0, 0, .3);
 
    
    
@@ -26,7 +26,7 @@
         }
 
         &:hover {
-            color: aquamarine;
+            color: lighten($primary-color, 40% );
         }
 
 
@@ -45,48 +45,66 @@
         margin-left: 10px;
     }
 
+    #menu-toggle {
+      visibility: hidden;
+
+    }
+     .menu-button {
+      visibility: hidden;
+     }
+
+     .menu-button-close {
+      z-index: 2;
+     }
 }
 
-@media (max-width: 400px) { //aggiustare hamburger menu //
-    .menu-button-container {
-        display: flex;
-      }
-      .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-      #menu-toggle ~ .menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      #menu-toggle:checked ~ .menu li {
-        border: 1px solid #333;
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      .options > li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #222;
-      }
-      .options > li:not(:last-child) {
-        border-bottom: 1px solid #444;
-      }
+@media (max-width: 460px) { 
+ 
+ 
+  
+  .options {
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    background-color: $primary-color;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    box-shadow:   0 3px 2px rgba(0, 0, 0, .3);
+
     
+    a {
+      display: block;
+      padding: 10px;
+      
+      &:active, 
+      &:hover {
+        background-color: $secondary-color;
+      }
+      
+     
+    }
+
+    
+  }
+
+  .menu-button-container {
+    
+    padding: 15px ;
+    cursor: pointer;
+
+    .menu-button {
+      font-size: 23px;
+      visibility:visible;
+    }
+  }
+
+  #menu-toggle:checked ~ .options {
+    opacity: 1;
+  }
+    
+  
 
 }
 
