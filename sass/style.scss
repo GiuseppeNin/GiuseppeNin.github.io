@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 $primary-color: rgb(38, 148, 221);
-$secondary-color:rgb(157, 187, 207)  ;
+$secondary-color:rgb(130, 205, 255)  ;
 $font:Raleway;
 
 
@@ -12,5 +14,12 @@ $font:Raleway;
     font-family: $font;
 }
 
+body {
+    background-color: lighten($secondary-color, 7%)
+}
+
+
+
 @import "navbar";
-@import "body";
+@import "main";
+@import "media-queries"

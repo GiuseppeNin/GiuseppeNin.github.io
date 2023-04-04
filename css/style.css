@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +7,15 @@
   font-family: Raleway;
 }
 
+body {
+  background-color: #a6dbff;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  background-image: linear-gradient(to left, rgb(38, 148, 221), rgb(157, 187, 207));
+  background-image: linear-gradient(to left, rgb(38, 148, 221), rgb(130, 205, 255));
   align-items: center;
   height: 7%;
   width: 100%;
@@ -24,20 +29,22 @@
 }
 .navbar .options a {
   text-decoration: none;
+  color: black;
 }
 .navbar .options a:visited {
   color: black;
 }
 .navbar .options a:hover {
-  color: #d6ebf9;
+  color: #ecf6fc;
 }
 .navbar .options li {
   margin: 0 10px 0 10px;
 }
 .navbar .name {
-  font-weight: bold;
-  font-size: 20px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 25px;
   margin-left: 10px;
+  cursor: default;
 }
 .navbar #menu-toggle {
   visibility: hidden;
@@ -45,20 +52,47 @@
 .navbar .menu-button {
   visibility: hidden;
 }
-.navbar .menu-button-close {
-  z-index: 2;
+
+main {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+main .container {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+main .container p {
+  font-size: 25px;
+}
+main .container .pro-pic {
+  max-height: 350px;
+  border-radius: 50%;
+}
+main .container .text {
+  max-width: 450px;
+  margin: 5px 30px 0 10px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container .text {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 455px) {
   .options {
     flex-direction: column;
     padding: 20px;
     position: absolute;
-    top: 60px;
+    top: 57px;
     background-color: rgb(38, 148, 221);
     width: 100%;
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
+    visibility: collapse;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
   }
   .options a {
@@ -66,7 +100,7 @@
     padding: 10px;
   }
   .options a:active, .options a:hover {
-    background-color: rgb(157, 187, 207);
+    background-color: rgb(130, 205, 255);
   }
   .menu-button-container {
     padding: 15px;
@@ -77,9 +111,13 @@
     visibility: visible;
   }
   #menu-toggle:checked ~ .options {
-    opacity: 1;
+    visibility: visible;
   }
-}
-main {
-  margin-top: 80px;
+  /*main*/
+  .container .pro-pic {
+    height: 250px;
+  }
+  .container .text {
+    margin-right: 1px;
+  }
 }/*# sourceMappingURL=style.css.map */
