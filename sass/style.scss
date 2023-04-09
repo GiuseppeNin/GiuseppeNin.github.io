@@ -15,7 +15,8 @@ $font:Raleway;
 }
 
 body {
-    background-color: lighten($secondary-color, 7%)
+    background-color: lighten($secondary-color,20%)
+   //background-image:linear-gradient(to bottom, lighten($secondary-color, 20%), $primary-color);
 }
 
 ::-webkit-scrollbar {
@@ -34,4 +35,5 @@ body {
 @import "navbar";
 @import "index";
 @import "contacts";
+@import "curriculum";
 @import "media-queries";

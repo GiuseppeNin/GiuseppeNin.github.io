@@ -1,13 +1,20 @@
-
-.social {
-    margin-top: 100px;
+footer {
+   background-color: $primary-color;
+   border: 1px solid $primary-color;
+  
+  
+}
+#contacts {
+    margin: 10px 0 10px 0;
     display: flex;
     justify-content: space-around;
+    
+    
 
     .fa {
         display: flex;
         justify-content: center;
-        padding: 30px 30px;
+        padding: 20px 20px;
         font-size: 35px;
         
         text-align: center;
@@ -15,6 +22,7 @@
         text-decoration: none;
         color: white;
         transition: opacity .2s;
+        margin-bottom: 10px;
        
 
         &:hover {
@@ -23,7 +31,7 @@
 
         &-facebook {
             background: #3B5998;
-            padding: 30px 35px;
+            padding: 20px 25px;
             display: inline;
         }
 

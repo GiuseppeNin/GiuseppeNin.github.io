@@ -77,8 +77,9 @@
        
     }
   
-    .social {
-      flex-direction: column;
+    #contacts {
+      
+      flex-wrap: wrap;
       align-items: center;
 
       .fa {

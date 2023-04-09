@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #a6dbff;
+  background-color: #e8f6ff;
 }
 
 ::-webkit-scrollbar {
@@ -63,13 +63,13 @@ body {
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
 }
 main .container {
   display: flex;
-  margin-top: 100px;
+  margin-top: 110px;
   align-items: center;
   justify-content: center;
 }
@@ -86,19 +86,18 @@ main .container .text {
 }
 
 article {
-  margin-top: 300px;
+  margin-top: 295px;
   height: 500px;
-  background-image: linear-gradient(to bottom, #a6dbff, rgb(38, 148, 221));
   display: flex;
   justify-content: center;
   align-items: center;
 }
 article #bio {
-  max-width: 450px;
-  background-color: #e4f1fb;
+  max-width: 1000px;
+  background-color: #7ebfeb;
   border-radius: 7px;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
-  margin: 0 10px 0 10px;
+  margin: 0 10px 100px 10px;
 }
 article #bio p {
   font-size: 17px;
@@ -109,42 +108,71 @@ article #bio h2 {
   margin: 10px 0 0 10px;
 }
 
-.social {
-  margin-top: 100px;
+footer {
+  background-color: rgb(38, 148, 221);
+  border: 1px solid rgb(38, 148, 221);
+}
+
+#contacts {
+  margin: 10px 0 10px 0;
   display: flex;
   justify-content: space-around;
 }
-.social .fa {
+#contacts .fa {
   display: flex;
   justify-content: center;
-  padding: 30px 30px;
+  padding: 20px 20px;
   font-size: 35px;
   text-align: center;
   border-radius: 10px;
   text-decoration: none;
   color: white;
   transition: opacity 0.2s;
+  margin-bottom: 10px;
 }
-.social .fa:hover {
+#contacts .fa:hover {
   opacity: 0.8;
 }
-.social .fa-facebook {
+#contacts .fa-facebook {
   background: #3B5998;
-  padding: 30px 35px;
+  padding: 20px 25px;
   display: inline;
 }
-.social .fa-instagram {
+#contacts .fa-instagram {
   background-color: #125688;
 }
-.social .fa-linkedin {
+#contacts .fa-linkedin {
   background-color: #007bb5;
 }
-.social .fa-github {
+#contacts .fa-github {
   background-color: #333;
 }
-.social .fa-envelope {
+#contacts .fa-envelope {
   background-color: #c71610;
   font-size: 33px;
+}
+
+section {
+  margin-top: 10px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .curriculum {
+  max-width: 1500px;
+  background-color: #e4f1fb;
+  border-radius: 7px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 10px 100px 10px;
+}
+section .curriculum p {
+  font-size: 17px;
+  line-height: 23px;
+  margin: 0 10px 10px 10px;
+}
+section .curriculum h2 {
+  margin: 10px 0 0 10px;
 }
 
 @media (max-width: 830px) {
@@ -189,11 +217,11 @@ article #bio h2 {
   .container .pro-pic {
     height: 250px;
   }
-  .social {
-    flex-direction: column;
+  #contacts {
+    flex-wrap: wrap;
     align-items: center;
   }
-  .social .fa {
+  #contacts .fa {
     margin: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
