@@ -1,0 +1,49 @@
+
+.social {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+
+    .fa {
+        display: flex;
+        justify-content: center;
+        padding: 30px 30px;
+        font-size: 35px;
+        
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        transition: opacity .2s;
+       
+
+        &:hover {
+            opacity: 0.8; 
+        }
+
+        &-facebook {
+            background: #3B5998;
+            padding: 30px 35px;
+            display: inline;
+        }
+
+        &-instagram {
+            background-color: #125688;
+        }
+
+        &-linkedin {
+            background-color: #007bb5;
+        }
+
+        &-github {
+            background-color: #333;
+        }
+
+        &-envelope {
+            background-color: #c71610;
+            font-size: 33px;
+        }
+
+    
+    }
+}

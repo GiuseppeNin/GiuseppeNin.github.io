@@ -18,8 +18,20 @@ body {
     background-color: lighten($secondary-color, 7%)
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:$primary-color;
+    margin-top: 100px
+}
+    
+
+
 
 
 @import "navbar";
-@import "main";
-@import "media-queries"
+@import "index";
+@import "contacts";
+@import "media-queries";

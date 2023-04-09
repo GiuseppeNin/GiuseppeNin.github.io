@@ -11,6 +11,15 @@ body {
   background-color: #a6dbff;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(38, 148, 221);
+  margin-top: 100px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -76,6 +85,68 @@ main .container .text {
   margin: 5px 30px 0 10px;
 }
 
+article {
+  margin-top: 300px;
+  height: 500px;
+  background-image: linear-gradient(to bottom, #a6dbff, rgb(38, 148, 221));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article #bio {
+  max-width: 450px;
+  background-color: #e4f1fb;
+  border-radius: 7px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 10px 0 10px;
+}
+article #bio p {
+  font-size: 17px;
+  line-height: 23px;
+  margin: 0 10px 10px 10px;
+}
+article #bio h2 {
+  margin: 10px 0 0 10px;
+}
+
+.social {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.social .fa {
+  display: flex;
+  justify-content: center;
+  padding: 30px 30px;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.2s;
+}
+.social .fa:hover {
+  opacity: 0.8;
+}
+.social .fa-facebook {
+  background: #3B5998;
+  padding: 30px 35px;
+  display: inline;
+}
+.social .fa-instagram {
+  background-color: #125688;
+}
+.social .fa-linkedin {
+  background-color: #007bb5;
+}
+.social .fa-github {
+  background-color: #333;
+}
+.social .fa-envelope {
+  background-color: #c71610;
+  font-size: 33px;
+}
+
 @media (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
@@ -84,7 +155,7 @@ main .container .text {
     margin-top: 30px;
   }
 }
-@media (max-width: 455px) {
+@media (max-width: 480px) {
   .options {
     flex-direction: column;
     padding: 20px;
@@ -98,6 +169,7 @@ main .container .text {
   .options a {
     display: block;
     padding: 10px;
+    border-bottom: 1px solid #68b5e7;
   }
   .options a:active, .options a:hover {
     background-color: rgb(130, 205, 255);
@@ -117,7 +189,11 @@ main .container .text {
   .container .pro-pic {
     height: 250px;
   }
-  .container .text {
-    margin-right: 1px;
+  .social {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social .fa {
+    margin: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
