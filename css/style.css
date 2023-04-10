@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #e8f6ff;
+  background-color: #f7fcff;
 }
 
 ::-webkit-scrollbar {
@@ -18,6 +18,11 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(38, 148, 221);
   margin-top: 100px;
+}
+
+h1,
+h2 {
+  color: rgb(38, 148, 221);
 }
 
 .navbar {
@@ -49,11 +54,26 @@ body {
 .navbar .options li {
   margin: 0 10px 0 10px;
 }
+.navbar .home {
+  text-decoration: none;
+  color: black;
+}
+.navbar .home:visited {
+  color: black;
+}
+.navbar .home:hover {
+  color: #ecf6fc;
+}
 .navbar .name {
   font-family: "Major Mono Display", monospace;
   font-size: 25px;
   margin-left: 10px;
-  cursor: default;
+  display: flex;
+  align-items: center;
+}
+.navbar .name .logo {
+  width: 40px;
+  margin: 0 10px 0 13px;
 }
 .navbar #menu-toggle {
   visibility: hidden;
@@ -87,44 +107,54 @@ main .container .text {
 
 article {
   margin-top: 295px;
+  border-top: 1px solid rgb(38, 148, 221);
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 article #bio {
-  max-width: 1000px;
-  background-color: #7ebfeb;
+  max-width: 700px;
+  background-color: #e4f1fb;
   border-radius: 7px;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
-  margin: 0 10px 100px 10px;
+  margin: 40px 10px 100px 10px;
 }
 article #bio p {
   font-size: 17px;
   line-height: 23px;
   margin: 0 10px 10px 10px;
 }
+article #bio p a {
+  text-decoration: none;
+  color: #36aeff;
+}
 article #bio h2 {
   margin: 10px 0 0 10px;
 }
+article .bio-pic {
+  max-height: 300px;
+  margin-left: 10px;
+}
 
 footer {
-  background-color: rgb(38, 148, 221);
+  background-image: linear-gradient(to bottom, rgb(38, 148, 221), #52aae4);
   border: 1px solid rgb(38, 148, 221);
+  margin-top: 80px;
 }
 
 #contacts {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0 0;
   display: flex;
   justify-content: space-around;
 }
 #contacts .fa {
   display: flex;
   justify-content: center;
-  padding: 20px 20px;
+  padding: 15px 15px;
   font-size: 35px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 7px;
   text-decoration: none;
   color: white;
   transition: opacity 0.2s;
@@ -135,7 +165,7 @@ footer {
 }
 #contacts .fa-facebook {
   background: #3B5998;
-  padding: 20px 25px;
+  padding: 15px 20px;
   display: inline;
 }
 #contacts .fa-instagram {
@@ -149,30 +179,53 @@ footer {
 }
 #contacts .fa-envelope {
   background-color: #c71610;
-  font-size: 33px;
+  font-size: 30px;
 }
 
 section {
-  margin-top: 10px;
-  height: 500px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .curriculum {
-  max-width: 1500px;
+section .skills {
+  max-width: 700px;
   background-color: #e4f1fb;
   border-radius: 7px;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
-  margin: 0 10px 100px 10px;
+  margin: 0 10px 0 10px;
 }
-section .curriculum p {
-  font-size: 17px;
-  line-height: 23px;
-  margin: 0 10px 10px 10px;
+section .skills .skills-html-css {
+  max-height: 100px;
+  margin: 10px 15px 10px 10px;
 }
-section .curriculum h2 {
+section .skills .bootstrap {
+  max-height: 85px;
+  margin: 10px 0 10px 0;
+}
+section .skills .java {
+  max-height: 110px;
+  opacity: 30%;
+  margin: 0 0 6px 0;
+}
+section .skills h2 {
   margin: 10px 0 0 10px;
+}
+section .skill-list {
+  max-height: 300px;
+  margin: 0 0 10px 10px;
+}
+section .coming-soon {
+  position: relative;
+  display: inline-block;
+}
+section .coming-soon p {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  color: rgb(130, 205, 255);
+  font-weight: bold;
+  text-align: center;
 }
 
 @media (max-width: 830px) {
@@ -182,13 +235,23 @@ section .curriculum h2 {
   .container .text {
     margin-top: 30px;
   }
+  article,
+  section {
+    flex-direction: column-reverse;
+    border-top: none;
+  }
+}
+@media (max-width: 520px) {
+  .bio-pic {
+    height: 175px;
+  }
 }
 @media (max-width: 480px) {
   .options {
     flex-direction: column;
     padding: 20px;
     position: absolute;
-    top: 57px;
+    top: 56px;
     background-color: rgb(38, 148, 221);
     width: 100%;
     visibility: collapse;

@@ -2,9 +2,10 @@
 
 
 main {
-    margin-top: 90px;
+    margin-top:90px;
     display: flex;
     justify-content: center;
+    
     
     
     
@@ -42,30 +43,40 @@ main {
 
 article {
     margin-top: 295px;
-    
+    border-top: 1px solid $primary-color;
     height: 500px;
-    //background-image:linear-gradient(to bottom, lighten($secondary-color, 20%), $primary-color);
+    
     display: flex;
     justify-content: center;
     align-items: center;
 
     #bio {
-        max-width: 1000px;
-        background-color: lighten($primary-color, 20% );
+        max-width: 700px;
+        background-color: lighten($primary-color, 43% );
         border-radius: 7px;
         box-shadow:   4px 4px 3px rgba(0, 0, 0, .3);
-        margin: 0 10px 100px 10px;
+        margin: 40px 10px 100px 10px;
 
         
         p {
             font-size: 17px;
             line-height: 23px;
             margin: 0 10px 10px 10px;
+
+            a {
+                text-decoration: none;
+                color: darken($secondary-color, 15%);
+            }
         }
 
         h2 {
             margin: 10px 0 0 10px;
         }
+    }
+
+    .bio-pic {
+        max-height: 300px;
+        margin-left: 10px;
     }
 }
 

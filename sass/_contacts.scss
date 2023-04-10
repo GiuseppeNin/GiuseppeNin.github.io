@@ -1,11 +1,13 @@
 footer {
-   background-color: $primary-color;
+   background-image: linear-gradient(to bottom, $primary-color, lighten($primary-color, 10%));
    border: 1px solid $primary-color;
-  
+   margin-top: 80px;
+   
+ 
   
 }
 #contacts {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: space-around;
     
@@ -14,11 +16,11 @@ footer {
     .fa {
         display: flex;
         justify-content: center;
-        padding: 20px 20px;
+        padding: 15px 15px;
         font-size: 35px;
         
         text-align: center;
-        border-radius: 10px;
+        border-radius: 7px;
         text-decoration: none;
         color: white;
         transition: opacity .2s;
@@ -31,7 +33,7 @@ footer {
 
         &-facebook {
             background: #3B5998;
-            padding: 20px 25px;
+            padding: 15px 20px;
             display: inline;
         }
 
@@ -49,7 +51,7 @@ footer {
 
         &-envelope {
             background-color: #c71610;
-            font-size: 33px;
+            font-size: 30px;
         }
 
     

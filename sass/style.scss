@@ -15,7 +15,7 @@ $font:Raleway;
 }
 
 body {
-    background-color: lighten($secondary-color,20%)
+    background-color: lighten($secondary-color,23%)
    //background-image:linear-gradient(to bottom, lighten($secondary-color, 20%), $primary-color);
 }
 
@@ -27,7 +27,11 @@ body {
     background-color:$primary-color;
     margin-top: 100px
 }
-    
+
+h1,
+h2 {
+    color: $primary-color;
+}
 
 
 
@@ -35,5 +39,5 @@ body {
 @import "navbar";
 @import "index";
 @import "contacts";
-@import "curriculum";
+@import "projects";
 @import "media-queries";
