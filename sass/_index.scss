@@ -43,7 +43,7 @@ main {
 
 article {
     margin-top: 295px;
-    border-top: 1px solid $primary-color;
+    border-top: 1px dashed $primary-color;
     height: 500px;
     
     display: flex;

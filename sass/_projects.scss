@@ -1,10 +1,10 @@
-section {
-    margin-top:90px;
+#first {
+    margin-top:170px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .skills {
+    #skills {
         max-width: 700px;
         background-color: lighten($primary-color, 43% );
         border-radius: 7px;
@@ -57,5 +57,68 @@ section {
             
         }
         
+    }
+}
+
+#title-second {
+    margin-top: 200px;
+    display:flex ;
+    justify-content: center;
+    border-top: 1px dashed $primary-color;
+
+    h2 {
+        margin-top: 20px;
+    }
+}
+
+
+.second {
+    margin-top:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+
+    .project-1,
+    .project-soon {
+        max-width: 700px;
+        background-color: lighten($primary-color, 43% );
+        border-radius: 7px;
+        box-shadow:   4px 4px 3px rgba(0, 0, 0, .3);
+        margin: 20px 10px 0 10px;
+        
+    }
+
+    .mobile-1,
+    .desktop-1 {
+        max-height: 250px;
+        margin: 10px 10px 5px 10px;
+    }
+
+    p {
+        margin: 0 10px 10px 10px;
+    }
+
+    .placeholder {
+        padding: min(14vh, 8.2rem);
+
+        p {
+            color: $secondary-color;
+            font-weight: bold;
+            font-size: 22px; 
+        }
+    }
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+
+    .end-pic {
+        max-height: 200px;
     }
 }

@@ -9,18 +9,30 @@
       }
 
     article,
-    section {
+    #first {
       flex-direction: column-reverse;
       border-top: none;
     }
+
+    #title-second {
+      border-top: none ;
+    }
+
+   
 
     
 }
 
 @media (max-width: 520px) {
-  .bio-pic {
+  .bio-pic
+   {
     height: 175px;
     
+  }
+
+  .mobile-1,
+  .desktop-1 {
+    height: 145px;
   }
 }
 
@@ -102,6 +114,10 @@
     }
   
   
+
+    .end-pic {
+      height: 150px;
+    }
 }
   
   

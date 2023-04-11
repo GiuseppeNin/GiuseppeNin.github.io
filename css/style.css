@@ -35,6 +35,7 @@ h2 {
   width: 100%;
   top: 0;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 .navbar .options {
   list-style: none;
@@ -107,7 +108,7 @@ main .container .text {
 
 article {
   margin-top: 295px;
-  border-top: 1px solid rgb(38, 148, 221);
+  border-top: 1px dashed rgb(38, 148, 221);
   height: 500px;
   display: flex;
   justify-content: center;
@@ -140,7 +141,7 @@ article .bio-pic {
 footer {
   background-image: linear-gradient(to bottom, rgb(38, 148, 221), #52aae4);
   border: 1px solid rgb(38, 148, 221);
-  margin-top: 80px;
+  margin-top: 180px;
 }
 
 #contacts {
@@ -182,50 +183,102 @@ footer {
   font-size: 30px;
 }
 
-section {
-  margin-top: 90px;
+#first {
+  margin-top: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .skills {
+#first #skills {
   max-width: 700px;
   background-color: #e4f1fb;
   border-radius: 7px;
   box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
   margin: 0 10px 0 10px;
 }
-section .skills .skills-html-css {
+#first #skills .skills-html-css {
   max-height: 100px;
   margin: 10px 15px 10px 10px;
 }
-section .skills .bootstrap {
+#first #skills .bootstrap {
   max-height: 85px;
   margin: 10px 0 10px 0;
 }
-section .skills .java {
+#first #skills .java {
   max-height: 110px;
   opacity: 30%;
   margin: 0 0 6px 0;
 }
-section .skills h2 {
+#first #skills h2 {
   margin: 10px 0 0 10px;
 }
-section .skill-list {
+#first .skill-list {
   max-height: 300px;
   margin: 0 0 10px 10px;
 }
-section .coming-soon {
+#first .coming-soon {
   position: relative;
   display: inline-block;
 }
-section .coming-soon p {
+#first .coming-soon p {
   position: absolute;
   top: 50px;
   left: 25px;
   color: rgb(130, 205, 255);
   font-weight: bold;
   text-align: center;
+}
+
+#title-second {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed rgb(38, 148, 221);
+}
+#title-second h2 {
+  margin-top: 20px;
+}
+
+.second {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.second .project-1,
+.second .project-soon {
+  max-width: 700px;
+  background-color: #e4f1fb;
+  border-radius: 7px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
+  margin: 20px 10px 0 10px;
+}
+.second .mobile-1,
+.second .desktop-1 {
+  max-height: 250px;
+  margin: 10px 10px 5px 10px;
+}
+.second p {
+  margin: 0 10px 10px 10px;
+}
+.second .placeholder {
+  padding: min(14vh, 8.2rem);
+}
+.second .placeholder p {
+  color: rgb(130, 205, 255);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.end .end-pic {
+  max-height: 200px;
 }
 
 @media (max-width: 830px) {
@@ -236,14 +289,21 @@ section .coming-soon p {
     margin-top: 30px;
   }
   article,
-  section {
+  #first {
     flex-direction: column-reverse;
+    border-top: none;
+  }
+  #title-second {
     border-top: none;
   }
 }
 @media (max-width: 520px) {
   .bio-pic {
     height: 175px;
+  }
+  .mobile-1,
+  .desktop-1 {
+    height: 145px;
   }
 }
 @media (max-width: 480px) {
@@ -286,5 +346,8 @@ section .coming-soon p {
   }
   #contacts .fa {
     margin: 10px;
+  }
+  .end-pic {
+    height: 150px;
   }
 }/*# sourceMappingURL=style.css.map */
