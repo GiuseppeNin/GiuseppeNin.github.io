@@ -31,7 +31,7 @@ h2 {
   position: fixed;
   background-image: linear-gradient(to left, rgb(38, 148, 221), rgb(130, 205, 255));
   align-items: center;
-  height: 7%;
+  height: 60px;
   width: 100%;
   top: 0;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
@@ -100,6 +100,7 @@ main .container p {
 main .container .pro-pic {
   max-height: 350px;
   border-radius: 50%;
+  border: solid 3px rgb(130, 205, 255);
 }
 main .container .text {
   max-width: 450px;
