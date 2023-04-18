@@ -13,17 +13,17 @@
         
 
         
-        .skills-html-css {
+        .skill-html-css {
             max-height: 100px;
             margin: 10px 15px 10px 10px;
         }
 
-        .bootstrap {
+        .skill-bootstrap {
             max-height: 85px;
             margin: 10px 0 10px 0;
         }
 
-       .java {
+       .skill-java {
         max-height: 110px;
         opacity: 30%;
         margin: 0 0 6px 0;
@@ -68,6 +68,27 @@
 
     h2 {
         margin-top: 20px;
+    }
+}
+
+.github-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+    a {
+        text-decoration: none;
+        background-color: darken($secondary-color, 15%) ;
+        border-radius: 7px;
+        color: black;
+        padding: 10px 20px;
+        transition: opacity .2s;
+
+        &:visited,
+        &:hover {
+           color: black;
+            opacity: 0.8;
+        }
     }
 }
 
@@ -122,3 +143,6 @@
         max-height: 200px;
     }
 }
+
+
+
